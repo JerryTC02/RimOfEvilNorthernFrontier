@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>Apparel_ROE_LanternA</defName>
+    <label>Midwinter Festival Lantern</label>
+    <description>a small paper lantern crafted for the Midwinters Eve festival, typically carried by children to keep warm and help explore the towns edges whilst their parents are busy drinking.\n\nWeapons above 3 mass will be forcibly dropped if equipped.</description>
+    <thingClass>Apparel</thingClass>
+    <graphicData>
+      <texPath>Things/Apparel/LanternsNordberg/RedLantern</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <Mass>1.5</Mass>
+      <WorkToMake>2500</WorkToMake>
+      <Flammability>1</Flammability>
+      <EquipDelay>0.2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<LearningRateFactor MayRequire="Ludeon.RimWorld.Biotech">0.1</LearningRateFactor>
+    </equippedStatOffsets>
+    <costList>
+	  <WoodLog>5</WoodLog>
+	  <Cloth>25</Cloth>
+    </costList>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      <researchPrerequisite>ROE_Nordberg</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>50005</displayPriority>
+    </recipeMaker>
+    <tradeTags>
+      <li>NordbergApparel</li>
+    </tradeTags>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+	        <drawData>
+                <dataSouth>
+                    <layer>75</layer>
+                </dataSouth>
+                <dataWest>
+                    <layer>75</layer>
+                </dataWest>
+                <dataEast>
+                    <layer>75</layer>
+                </dataEast>
+                <dataNorth>
+				    <layer>20</layer>
+                </dataNorth>
+            </drawData>
+	  <wornGraphicPath>Things/Apparel/LanternsNordberg/RedLantern</wornGraphicPath>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>1</wearPerDay>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+	  <tags Inherit="False">
+       <li>NordbergLantern</li>
+      </tags>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+        <comps>
+            <li Class="CVN_HandShield.CompProperties_HandheldShield">
+				<weaponWeightLimit>3</weaponWeightLimit>
+                <isDropWeaponIfOverweight>true</isDropWeaponIfOverweight>
+                <isShieldStopFunctionIfOverweight>true</isShieldStopFunctionIfOverweight>
+            </li>
+			<li Class="CompProperties_Glower">
+               <glowRadius>3</glowRadius>
+               <glowColor>(255,88,87,0)</glowColor>
+            </li>
+			<li Class="EquippedGlowers.CompProperties_EquippedGlower">
+                <glowColor>255,88,87</glowColor>
+                <glowRadius>3</glowRadius>
+            </li>
+        </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>Apparel_ROE_LanternB</defName>
+    <label>Midwinter Festival Lantern (Alt)</label>
+    <description>a small paper lantern crafted for the Midwinters Eve festival, typically carried by children to keep warm and help explore the towns edges whilst their parents are busy drinking.\n\nWeapons above 3 mass will be forcibly dropped if equipped.</description>
+    <thingClass>Apparel</thingClass>
+    <graphicData>
+      <texPath>Things/Apparel/LanternsNordberg/YellowLantern</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <Mass>1.5</Mass>
+      <WorkToMake>2500</WorkToMake>
+      <Flammability>1</Flammability>
+      <EquipDelay>0.2</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+		<LearningRateFactor MayRequire="Ludeon.RimWorld.Biotech">0.1</LearningRateFactor>
+    </equippedStatOffsets>
+    <costList>
+	  <WoodLog>5</WoodLog>
+	  <Cloth>25</Cloth>
+    </costList>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      <researchPrerequisite>ROE_Nordberg</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>50005</displayPriority>
+    </recipeMaker>
+    <tradeTags>
+      <li>NordbergApparel</li>
+    </tradeTags>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+	        <drawData>
+                <dataSouth>
+                    <layer>75</layer>
+                </dataSouth>
+                <dataWest>
+                    <layer>75</layer>
+                </dataWest>
+                <dataEast>
+                    <layer>75</layer>
+                </dataEast>
+                <dataNorth>
+				    <layer>20</layer>
+                </dataNorth>
+            </drawData>
+	  <wornGraphicPath>Things/Apparel/LanternsNordberg/YellowLantern</wornGraphicPath>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>1</wearPerDay>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+	  <tags Inherit="False">
+       <li>NordbergLantern</li>
+      </tags>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+        <comps>
+            <li Class="CVN_HandShield.CompProperties_HandheldShield">
+				<weaponWeightLimit>3</weaponWeightLimit>
+                <isDropWeaponIfOverweight>true</isDropWeaponIfOverweight>
+                <isShieldStopFunctionIfOverweight>true</isShieldStopFunctionIfOverweight>
+            </li>
+			<li Class="CompProperties_Glower">
+               <glowRadius>3</glowRadius>
+               <glowColor>(255,210,131,0)</glowColor>
+            </li>
+            <li Class="EquippedGlowers.CompProperties_EquippedGlower">
+                <glowColor>255,210,131</glowColor>
+                <glowRadius>3</glowRadius>
+            </li>
+        </comps>
+  </ThingDef>
+  
+</Defs>

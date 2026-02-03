@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+  <HairDef>
+    <defName>ROE_Kelda</defName>
+    <label>Nordbergian Mistress</label>
+    <styleGender>Female</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/KeldaHair/KeldaHair</texPath>
+    <category>Urban</category>
+    <styleTags>
+      <li>Urban</li>
+      <li>Rural</li>
+      <li>HairShort</li>
+    </styleTags>
+  </HairDef>
+  
+  <HairDef>
+    <defName>ROE_KeldaYoung</defName>
+    <label>Nordbergian Maiden</label>
+    <styleGender>Female</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/KeldaHairYoung/KeldaHairYoung</texPath>
+    <category>Urban</category>
+    <styleTags>
+      <li>Urban</li>
+      <li>Rural</li>
+      <li>HairShort</li>
+    </styleTags>
+  </HairDef>
+
+</Defs>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ThingDef ParentName="ChildNordbergApparelMakeableBase">
+    <defName>Apparel_ROE_NordbergBoy</defName>
+    <label>Nordbergian Boys Parka</label>
+    <description>A traditional parka worn by young boys in Nordberg, worn tight to allow them to run wild and play in the snow.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+	  <displayPriority>50001</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/NordbergchildM/NordbergchildM</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.65</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>7500</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>2.5</Mass>
+      <Flammability>0.8</Flammability>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.06</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.31</ArmorRating_Heat>
+      <Insulation_Cold>48</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <MoveSpeed>0.15</MoveSpeed>
+	  <RangedCooldownFactor>-0.1</RangedCooldownFactor>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+	  <Leather_Heavy>45</Leather_Heavy>
+    </costList>
+    <apparel>
+	  <gender>Male</gender>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+	  <tags>
+        <li>NordbergBoy</li>
+      </tags>
+      <wornGraphicPath>Things/Apparel/NordbergchildM/NordbergchildM</wornGraphicPath>
+      <layers>
+		<li>Shell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChildNordbergApparelMakeableBase">
+    <defName>Apparel_ROE_NordbergGirl</defName>
+    <label>Nordbergian Girls Parka</label>
+    <description>A traditional parka worn by young girls in Nordberg, worn tight to allow them to run wild and play in the snow.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+	  <displayPriority>50002</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/NordbergchildF/NordbergchildF</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.65</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>7500</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>2.5</Mass>
+      <Flammability>0.8</Flammability>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.06</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.31</ArmorRating_Heat>
+      <Insulation_Cold>48</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <MoveSpeed>0.15</MoveSpeed>
+	  <RangedCooldownFactor>-0.1</RangedCooldownFactor>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+	  <Leather_Heavy>45</Leather_Heavy>
+    </costList>
+    <apparel>
+	  <gender>Female</gender>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+	  <tags>
+        <li>NordbergGirl</li>
+      </tags>
+      <wornGraphicPath>Things/Apparel/NordbergchildF/NordbergchildF</wornGraphicPath>
+      <layers>
+		<li>Shell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChildNordbergApparelMakeableBase">
+    <defName>Apparel_ROE_NordbergWitchBoy</defName>
+    <label>Outcast's Parka</label>
+    <description>A custom parka designed after an infamous orphan from nordberg, known as the Witchboy. Its rugged nature allows even a child to access the natural magic around them.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+	  <displayPriority>50003</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Witchboy/Witchboy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.65</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>9500</WorkToMake>
+      <MaxHitPoints>175</MaxHitPoints>
+      <Mass>2.8</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.09</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.32</ArmorRating_Heat>
+      <Insulation_Cold>52</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <MoveSpeed>0.2</MoveSpeed>
+	  <PsychicSensitivityOffset>0.05</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.011</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+	  <Leather_Heavy>65</Leather_Heavy>
+    </costList>
+    <apparel>
+	  <gender>Male</gender>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+	  <tags>
+        <li>NordbergWitchBoy</li>
+      </tags>
+      <wornGraphicPath>Things/Apparel/Witchboy/Witchboy</wornGraphicPath>
+      <layers>
+		<li>Shell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChildNordbergApparelMakeableBase">
+    <defName>Apparel_ROE_NordbergWitchGirl</defName>
+    <label>Fancy Nordbergian Girls Parka</label>
+    <description>A girls fur parka with custom alterations.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+	  <displayPriority>50004</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Witchgirl/Witchgirl</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.65</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>8500</WorkToMake>
+      <MaxHitPoints>155</MaxHitPoints>
+      <Mass>2.5</Mass>
+      <Flammability>0.8</Flammability>
+      <ArmorRating_Sharp>0.27</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.31</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<MoveSpeed>0.2</MoveSpeed>
+        <SocialImpact>0.15</SocialImpact>
+		<ForagedNutritionPerDay>0.2</ForagedNutritionPerDay>
+		<CookSpeed>0.10</CookSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+	  <Leather_Heavy>50</Leather_Heavy>
+    </costList>
+    <apparel>
+	  <gender>Female</gender>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+		<li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+	  <tags>
+        <li>NordbergWitchGirl</li>
+      </tags>
+      <wornGraphicPath>Things/Apparel/Witchgirl/Witchgirl</wornGraphicPath>
+      <layers>
+		<li>Shell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+</Defs>

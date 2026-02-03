@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ThingDef ParentName="NordbergBaseMeleeWeapon_Blunt_Quality">
+    <defName>MeleeWeapon_ROE_HuntersClub</defName>
+    <label>Hunter's Club</label>
+    <techLevel>Medieval</techLevel>
+    <description>A large club fitted with an iron band on one end, used by hunters to bludgeon smaller prey. Often used to hunt young seals for their pelts, or to capture wolves for sale to other nations.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/HunterClub</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.1</drawSize>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <statBases>
+      <WorkToMake>2850</WorkToMake>
+      <Mass>2.4</Mass>
+    </statBases>
+	<equippedStatOffsets>
+		<ArrestSuccessChance>0.01</ArrestSuccessChance>
+	    <AnimalGatherSpeed>0.02</AnimalGatherSpeed>
+		<TameAnimalChance>0.02</TameAnimalChance>
+		<TrainAnimalChance>0.02</TrainAnimalChance>
+		<ButcheryFleshSpeed>0.02</ButcheryFleshSpeed>
+		<BondAnimalChanceFactor>-0.05</BondAnimalChanceFactor>
+	</equippedStatOffsets>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+	<costList>
+      <Steel>5</Steel>
+	  <WoodLog>50</WoodLog>
+    </costList>
+    <weaponTags>
+	 <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>ROE_Nordberg</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+	  <recipeUsers Inherit="False">
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <displayPriority>90002</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  
+</Defs>

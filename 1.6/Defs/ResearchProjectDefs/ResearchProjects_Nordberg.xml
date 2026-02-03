@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>ROE_Nordberg</defName>
+		<label>Northern Lifestyle</label>
+		<description>Fur clothing, hunting, and celebrating the fact you've survived this year, a simple lifestyle for simple folk.</description>
+		<baseCost>250</baseCost>
+		<tab>JTC_Overlord</tab>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>ComplexClothing</li>
+			<li>Smithing</li>
+		</prerequisites>
+     <researchViewX>1.00</researchViewX>
+     <researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+
+	<!--ResearchProjectDef>
+		<defName>ROE_NordbergFireworks</defName>
+		<label>Nordbergian Fireworks</label>
+		<description>Midwinters Eve is the one time of year that Nordbergians allow themselves to relax. the festival requires mass amounts of fireworks, as such the people here have found plenty of ways to produce fireworks without the proper resources.</description>
+		<baseCost>325</baseCost>
+		<tab>JTC_Overlord</tab>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>ROE_Nordberg</li>
+		</prerequisites>
+     <researchViewX>2.00</researchViewX>
+     <researchViewY>0.00</researchViewY>
+	</ResearchProjectDef-->
+
+
+</Defs>

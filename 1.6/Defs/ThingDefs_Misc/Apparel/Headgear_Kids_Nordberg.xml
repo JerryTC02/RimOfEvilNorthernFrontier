@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ThingDef ParentName="HatMakeableBaseNordbergChild">
+    <defName>Apparel_ROE_NordbergBoyHood</defName>
+    <label>Nordbergian Boys Hood</label>
+    <description>A small furlined hood for young nordbergian boys to keep them warm in the harsh winter winds.</description>
+	<techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/Apparel/NordbergchildM/Hood/NordbergchildMHood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.65</drawSize>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <statBases>
+      <WorkToMake>2150</WorkToMake>
+      <MaxHitPoints>125</MaxHitPoints>
+      <Mass>0.35</Mass>
+      <Flammability>0.8</Flammability>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.09</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.24</ArmorRating_Heat>
+      <Insulation_Cold>30</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <recipeMaker>
+	  <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>50001</displayPriority>
+    </recipeMaker>
+	<costList>
+	  <Leather_Heavy>25</Leather_Heavy>
+    </costList>
+    <apparel>
+		    <drawData>
+                <dataSouth>
+                </dataSouth>
+                <dataWest>
+                </dataWest>
+                <dataEast>
+                </dataEast>
+                <dataNorth>
+				    <layer>95</layer>
+                </dataNorth>
+            </drawData>
+	  <gender>Male</gender>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/NordbergchildM/Hood/NordbergchildMHood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="HatMakeableBaseNordbergChild">
+    <defName>Apparel_ROE_NordbergGirlHood</defName>
+    <label>Nordbergian Girls Hood</label>
+    <description>A small furlined hood for young nordbergian girls to keep them warm in the harsh winter winds.</description>
+	<techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/Apparel/NordbergchildF/Hood/NordbergchildFHood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.65</drawSize>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <statBases>
+      <WorkToMake>2150</WorkToMake>
+      <MaxHitPoints>125</MaxHitPoints>
+      <Mass>0.35</Mass>
+      <Flammability>0.8</Flammability>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.09</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.24</ArmorRating_Heat>
+      <Insulation_Cold>30</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <recipeMaker>
+	  <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>50002</displayPriority>
+    </recipeMaker>
+	<costList>
+	  <Leather_Heavy>25</Leather_Heavy>
+    </costList>
+    <apparel>
+			<drawData>
+                <dataSouth>
+                </dataSouth>
+                <dataWest>
+                </dataWest>
+                <dataEast>
+                </dataEast>
+                <dataNorth>
+				    <layer>95</layer>
+                </dataNorth>
+            </drawData>
+	  <gender>Female</gender>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/NordbergchildF/Hood/NordbergchildFHood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="HatMakeableBaseNordbergChild">
+    <defName>Apparel_ROE_NordbergWitchBoyHood</defName>
+    <label>Outcast's Hood</label>
+    <description>A sturdy frostcovered hood and mask worn by the Orphan known as "The Witchboy", its visage is known to inspire unease in those who gaze on it.</description>
+	<techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/Apparel/Witchboy/Hood/WitchboyHood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.65</drawSize>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <statBases>
+      <WorkToMake>2550</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.45</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.09</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.32</ArmorRating_Heat>
+      <Insulation_Cold>30</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>0.9</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+	  <MeleeHitChance>0.10</MeleeHitChance>
+	  <PsychicSensitivityOffset>0.02</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicEntropyRecoveryRate>
+	  <SocialImpact>-0.1</SocialImpact>
+	  <ToxicEnvironmentResistance>0.20</ToxicEnvironmentResistance>
+    </equippedStatOffsets>
+    <recipeMaker>
+	  <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>50003</displayPriority>
+    </recipeMaker>
+	<costList>
+	  <Leather_Heavy>30</Leather_Heavy>
+	  <Cloth>5</Cloth>
+    </costList>
+    <apparel>
+      <gender>Male</gender>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Witchboy/Hood/WitchboyHood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="HatMakeableBaseNordbergChild">
+    <defName>Apparel_ROE_NordbergEarmuffs</defName>
+    <label>Nordbergian Childrens Earmuffs</label>
+    <description>An adorable set of earmuffs designed for young children, they are warmer then they look.</description>
+	<techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/Apparel/Witchgirl/Hood/WitchgirlMuff</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.65</drawSize>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <statBases>
+      <WorkToMake>1350</WorkToMake>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Mass>0.05</Mass>
+      <Flammability>0.75</Flammability>
+      <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.06</ArmorRating_Heat>
+      <Insulation_Cold>15</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>0.2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	  <SocialImpact>0.1</SocialImpact>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <displayPriority>50004</displayPriority>
+    </recipeMaker>
+	<costList>
+	  <Leather_Heavy>5</Leather_Heavy>
+	  <WoodLog>10</WoodLog>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Witchgirl/Hood/WitchgirlMuff</wornGraphicPath>
+	  <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+</Defs>

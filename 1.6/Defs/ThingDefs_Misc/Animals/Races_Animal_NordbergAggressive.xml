@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  
+  <ThingDef Name="ThingBaseWolfNordberg" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>warg-1</devNote>
+    <statBases>
+      <MoveSpeed>5.35</MoveSpeed>
+      <MarketValue>385</MarketValue>
+      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+      <FilthRate>1.5</FilthRate>
+      <Wildness>0.80</Wildness>
+	  <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <labelNoLocation>claw</labelNoLocation>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>11.9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>23</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>right claw</label>
+        <labelNoLocation>claw</labelNoLocation>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>11.9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>23</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.9</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>20</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <animalType>Canine</animalType>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <predator>true</predator>
+	  <herdAnimal>true</herdAnimal>
+      <maxPreyBodySize>2.4</maxPreyBodySize>
+      <petness>0.15</petness>
+      <baseBodySize>1.2</baseBodySize>
+      <baseHungerRate>0.22</baseHungerRate>
+      <baseHealthScale>1.2</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+      <leatherDef>Leather_Heavy</leatherDef>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+      <specialTrainables>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+      </specialTrainables>
+      <manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <gestationPeriodDays>11</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>14</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.45</minAge>
+          <soundWounded>Pawn_Dog_Injured</soundWounded>
+          <soundDeath>Pawn_Dog_Death</soundDeath>
+          <soundCall>Pawn_Dog_Call</soundCall>
+          <soundAngry>Pawn_Dog_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundEating>PredatorLarge_Eat</soundEating>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.3)</li>
+        <li>(0.32, 0, 0.08)</li>
+        <li>(0.0, 0, -0.21)</li>
+        <li>(-0.32, 0, 0.08)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" Name="AnimalKindBaseWolfNordberg" Abstract="True">
+    <combatPower>85</combatPower>
+    <ecoSystemWeight>0.32</ecoSystemWeight>
+	<wildGroupSize>2~3</wildGroupSize>
+  </PawnKindDef>
+
+  <ThingDef ParentName="ThingBaseWolfNordberg">
+    <defName>Wolf_ROE_Nordberg</defName>
+    <label>Nordbergian Wolf</label>
+    <description>Large wolves that plague the northern regions, highly aggressive due to years of overhunting by human tribes. If one can tame these wolves, they are known to be quite playful and will defend their owner till death.</description>
+    <race>
+      <useMeatFrom>Wolf_Timber</useMeatFrom>
+	  	<wildBiomes>
+				<BorealForest>0.32</BorealForest>
+				<Tundra>0.28</Tundra>
+				<IceSheet>0.15</IceSheet>
+				<SeaIce>0.15</SeaIce>
+				<GlacialPlain MayRequire="Ludeon.RimWorld.Odyssey">0.21</GlacialPlain>
+		</wildBiomes>
+	    <canCrossBreedWith>
+         <li>Wolf_ROE_NordbergAlpha</li>
+        </canCrossBreedWith>
+        <crossAggroWith>
+         <li>Wolf_ROE_NordbergAlpha</li>
+        </crossAggroWith>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBaseWolfNordberg">
+    <defName>Wolf_ROE_Nordberg</defName>
+    <label>Nordbergian Wolf</label>
+    <labelPlural>Nordbergian Wolves</labelPlural>
+    <race>Wolf_ROE_Nordberg</race>
+    <lifeStages>
+      <li>
+        <label>nordbergian wolf puppy</label>
+        <labelPlural>nordbergian wolf puppies</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergWolf/NordbergWolf</texPath>
+          <drawSize>1.20</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <drawSize>1.20</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergWolf/NordbergWolf</texPath>
+          <drawSize>1.65</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <drawSize>1.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergWolf/NordbergWolf</texPath>
+          <drawSize>2.25</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <drawSize>2.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <ThingDef Name="ThingBaseWolfNordbergAlpha" ParentName="AnimalThingBase" Abstract="True">
+    <devNote>warg-1</devNote>
+    <statBases>
+      <MoveSpeed>5.35</MoveSpeed>
+      <MarketValue>625</MarketValue>
+      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+      <FilthRate>2</FilthRate>
+      <Wildness>0.95</Wildness>
+	  <CaravanRidingSpeedFactor>1.25</CaravanRidingSpeedFactor>
+	  <MinimumHandlingSkill>7</MinimumHandlingSkill>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <labelNoLocation>claw</labelNoLocation>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>15.9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>23</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>right claw</label>
+        <labelNoLocation>claw</labelNoLocation>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>15.9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>23</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.9</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>20</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <animalType>Canine</animalType>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <predator>true</predator>
+      <maxPreyBodySize>2.6</maxPreyBodySize>
+      <petness>0.1</petness>
+      <baseBodySize>1.35</baseBodySize>
+      <baseHungerRate>0.30</baseHungerRate>
+      <baseHealthScale>1.55</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+      <leatherDef>Leather_Heavy</leatherDef>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+      <specialTrainables>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+      </specialTrainables>
+      <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <gestationPeriodDays>11</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>16</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.45</minAge>
+          <soundWounded>Pawn_Dog_Injured</soundWounded>
+          <soundDeath>Pawn_Dog_Death</soundDeath>
+          <soundCall>Pawn_Dog_Call</soundCall>
+          <soundAngry>Pawn_Dog_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundEating>PredatorLarge_Eat</soundEating>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.3)</li>
+        <li>(0.32, 0, 0.08)</li>
+        <li>(0.0, 0, -0.21)</li>
+        <li>(-0.32, 0, 0.08)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" Name="AnimalKindBaseWolfNordbergAlpha" Abstract="True">
+    <combatPower>105</combatPower>
+    <ecoSystemWeight>0.65</ecoSystemWeight>
+  </PawnKindDef>
+
+  <ThingDef ParentName="ThingBaseWolfNordbergAlpha">
+    <defName>Wolf_ROE_NordbergAlpha</defName>
+    <label>Nordbergian Alpha Wolf</label>
+    <description>An ancient nordbergian wolf who has grown far larger then others of its kind, highly experienced and scarred by the ravages of time.</description>
+    <race>
+      <useMeatFrom>Wolf_Timber</useMeatFrom>
+	  	<wildBiomes>
+				<BorealForest>0.15</BorealForest>
+				<Tundra>0.15</Tundra>
+				<IceSheet>0.10</IceSheet>
+				<SeaIce>0.10</SeaIce>
+				<GlacialPlain MayRequire="Ludeon.RimWorld.Odyssey">0.10</GlacialPlain>
+		</wildBiomes>
+	    <canCrossBreedWith>
+         <li>Wolf_ROE_Nordberg</li>
+        </canCrossBreedWith>
+        <crossAggroWith>
+         <li>Wolf_ROE_Nordberg</li>
+        </crossAggroWith>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBaseWolfNordbergAlpha">
+    <defName>Wolf_ROE_NordbergAlpha</defName>
+    <label>Nordbergian Alpha Wolf</label>
+    <labelPlural>Nordbergian Alpha Wolves</labelPlural>
+    <race>Wolf_ROE_NordbergAlpha</race>
+    <lifeStages>
+      <li>
+        <label>nordbergian alpha wolf puppy</label>
+        <labelPlural>nordbergian wolf puppies</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergWolfAlpha/NordbergWolfAlpha</texPath>
+          <drawSize>1.30</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <drawSize>1.30</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergWolfAlpha/NordbergWolfAlpha</texPath>
+          <drawSize>1.85</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <drawSize>1.85</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergWolfAlpha/NordbergWolfAlpha</texPath>
+          <drawSize>2.50</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <drawSize>2.50</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Nordberg_ROE_Yeti</defName>
+    <label>Yeti</label>
+    <description>Rare beasts found in the far reaches of the north, Yetis are incredibly dangerous creatures which can decimate entire colonies with ease. Despite their massive bulk, they are not actively aggressive and will often coexist with animals they find cute, such as baby seals.</description>
+    <statBases>
+      <MoveSpeed>3</MoveSpeed>
+      <MarketValue>2650</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+      <ComfyTemperatureMax>30</ComfyTemperatureMax>
+      <Wildness>0.85</Wildness>
+      <FilthRate>5</FilthRate>
+	  <MinimumHandlingSkill>7</MinimumHandlingSkill>
+	  <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <labelNoLocation>fist</labelNoLocation>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>25</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <labelNoLocation>fist</labelNoLocation>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>25</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <race>
+      <body>Nordberg_Yeti</body>
+      <baseBodySize>3.7</baseBodySize>
+      <baseHungerRate>0.54</baseHungerRate>
+      <baseHealthScale>6.6</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <leatherDef>Leather_Heavy</leatherDef>
+      <trainability>Advanced</trainability>
+	  <specialTrainables>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+      </specialTrainables>
+        <crossAggroWith>
+         <li>Nordberg_ROE_Seal</li>
+        </crossAggroWith>
+      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>2</manhunterOnDamageChance>
+      <gestationPeriodDays>15</gestationPeriodDays>
+      <lifeExpectancy>85</lifeExpectancy>
+      <soundEating>Herbivore_Eat</soundEating>
+	  	<wildBiomes>
+				<BorealForest>0.10</BorealForest>
+				<Tundra>0.10</Tundra>
+				<IceSheet>0.10</IceSheet>
+				<SeaIce>0.10</SeaIce>
+				<GlacialPlain MayRequire="Ludeon.RimWorld.Odyssey">0.10</GlacialPlain>
+		</wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.3</minAge>
+		  <soundWounded>Pawn_ROE_Yeti_Wounded</soundWounded>
+          <soundDeath>Pawn_ROE_Yeti_Death</soundDeath>
+          <soundCall>Pawn_ROE_Yeti_Call</soundCall>
+          <soundAngry>Pawn_ROE_Yeti_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.09)</li>
+        <li>(0.21, 0, -0.04)</li>
+        <li>(0.0, 0, -0.18)</li>
+        <li>(-0.21, 0, -0.04)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Nordberg_ROE_Yeti</defName>
+    <label>Yeti</label>
+    <race>Nordberg_ROE_Yeti</race>
+    <combatPower>350</combatPower>
+    <ecoSystemWeight>0.68</ecoSystemWeight>
+	<abilities>
+      <li>Nordberg_ROE_Rock</li>
+    </abilities>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergYeti/NordbergYeti</texPath>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</texPath>
+          <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergYeti/NordbergYeti</texPath>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.2, 0.2, 0.2)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergYeti/NordbergYeti</texPath>
+          <drawSize>4.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</texPath>
+          <drawSize>4.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <AbilityDef>
+    <defName>Nordberg_ROE_Rock</defName>
+    <label>throw rock</label>
+    <description>Command the yeti to throw a chunk of solid ice or stone at a nearby location.</description>
+    <iconPath>UI/Commands/ThrowRock</iconPath>
+    <cooldownTicksRange>3500</cooldownTicksRange> <!-- 2 hours -->
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>300</displayOrder>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>24.9</range>
+      <warmupTime>1</warmupTime>
+      <soundCast>Interact_BeatFire</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Bullet_ROE_Nordberg_Rock</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ROE_Nordberg_Rock</defName>
+    <label>boulder</label>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <color>(220,283,243)</color>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Rock_Yeti_Crush</damageDef>
+	  <damageAmountBase>45</damageAmountBase>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.9</explosionRadius>
+      <speed>18</speed>
+	  <spinRate>1</spinRate>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef>
+    <defName>Rock_Yeti_Crush</defName>
+    <label>crush</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been crushed to deathc.</deathMessage>
+    <hediff>Crush</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>5</defaultDamage>
+    <defaultArmorPenetration>0.35</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>5</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>2.5</buildingDamageFactorPassable>
+    <plantDamageFactor>1.5</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(0.73, 0.93, 0.96)</explosionColorCenter>
+    <explosionColorEdge>(0.71, 0.82, 0.90)</explosionColorEdge>
+    <soundExplosion>Explosion_Thump</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+
+</Defs>

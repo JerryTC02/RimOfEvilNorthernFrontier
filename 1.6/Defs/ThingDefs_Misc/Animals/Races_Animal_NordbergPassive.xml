@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Nordberg_ROE_Seal</defName>
+    <label>Nordbergian Seal</label>
+    <description>An unusual species of seal that possesses tusks and an aggressive nature. Young individuals barely resemble their parents, possessing a pure white fur coat and large eyes that many find adorable, and others find extremely unnerving.</description>
+    <statBases>
+      <MoveSpeed>2.1</MoveSpeed>
+      <MarketValue>315</MarketValue>
+      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+      <FilthRate>16</FilthRate>
+      <Wildness>0.75</Wildness>
+    </statBases>
+    <tools>
+      <li>
+        <label>tusk</label>
+        <capacities>
+          <li>Scratch</li>
+          <li>Stab</li>
+        </capacities>
+        <power>10.7</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>PinnipedWithTusks_Nordberg</body>
+      <herdAnimal>true</herdAnimal>
+      <baseBodySize>2.3</baseBodySize>
+      <baseHealthScale>1.45</baseHealthScale>
+      <baseHungerRate>0.60</baseHungerRate>
+      <foodType>CarnivoreAnimal</foodType>
+      <trainability>None</trainability>
+      <leatherDef>Leather_Heavy</leatherDef>
+      <gestationPeriodDays>7.66</gestationPeriodDays>
+      <waterSeeker>true</waterSeeker>
+      <waterCellCost>1</waterCellCost>
+      <manhunterOnDamageChance>0.75</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+      <canFishForFood>true</canFishForFood>
+	    <crossAggroWith>
+         <li>Nordberg_ROE_Yeti</li>
+        </crossAggroWith>
+	  	<wildBiomes>
+				<Tundra>0.10</Tundra>
+				<IceSheet>0.31</IceSheet>
+				<SeaIce>0.30</SeaIce>
+				<GlacialPlain MayRequire="Ludeon.RimWorld.Odyssey">0.30</GlacialPlain>
+		</wildBiomes>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.5, 1)</li>
+          <li>(2.0, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>1.9</minAge>
+		  <soundDeath>Pawn_ROE_SealBaby_Death</soundDeath>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>2.5</minAge>
+          <soundWounded>Pawn_ROE_Seal_Wounded</soundWounded>
+          <soundDeath>Pawn_ROE_Seal_Death</soundDeath>
+          <soundCall>Pawn_ROE_Seal_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundEating>Herbivore_Eat</soundEating>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.4)</li>
+        <li>(0.27, 0, 0.18)</li>
+        <li>(0.0, 0, 0.1)</li>
+        <li>(-0.27, 0, 0.18)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Nordberg_ROE_SealPup</defName>
+    <label>Nordbergian Seal</label>
+    <race>Nordberg_ROE_Seal</race>
+    <combatPower>25</combatPower>
+    <maxGenerationAge>1</maxGenerationAge>
+    <wildGroupSize>4~5</wildGroupSize>
+    <ecoSystemWeight>0.26</ecoSystemWeight>
+    <moveSpeedFactorByTerrainTag>
+      <li>
+        <key>Water</key>
+        <value>1.8</value>
+      </li>
+    </moveSpeedFactorByTerrainTag>
+    <lifeStages>
+      <li>
+        <label>nordbergian seal pup</label>
+        <labelPlural>nordbergian seal pups</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergSeal/NordbergSealPup</texPath>
+          <drawSize>1.35</drawSize>
+        </bodyGraphicData>
+        <swimmingGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergSeal/Swimming_NordbergSealPup</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.35</drawSize>
+        </swimmingGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Lynx/Dessicated_Lynx</texPath>
+          <drawSize>0.85</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergSeal/NordbergSeal</texPath>
+          <drawSize>1.55</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <swimmingGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergSeal/Swimming_NordbergSeal</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.55</drawSize>
+        </swimmingGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Lynx/Dessicated_Lynx</texPath>
+          <drawSize>1.55</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergSeal/NordbergSeal</texPath>
+          <drawSize>1.9</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <swimmingGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergSeal/Swimming_NordbergSeal</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.9</drawSize>
+        </swimmingGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Lynx/Dessicated_Lynx</texPath>
+          <drawSize>1.9</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Nordberg_ROE_Seal</defName>
+    <label>Nordbergian Seal</label>
+    <race>Nordberg_ROE_Seal</race>
+    <combatPower>75</combatPower>
+	<minGenerationAge>3</minGenerationAge>
+    <wildGroupSize>2~3</wildGroupSize>
+    <ecoSystemWeight>0.42</ecoSystemWeight>
+    <moveSpeedFactorByTerrainTag>
+      <li>
+        <key>Water</key>
+        <value>1.8</value>
+      </li>
+    </moveSpeedFactorByTerrainTag>
+    <lifeStages>
+      <li>
+        <label>nordbergian seal pup</label>
+        <labelPlural>nordbergian seal pups</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergSeal/NordbergSealPup</texPath>
+          <drawSize>1.35</drawSize>
+        </bodyGraphicData>
+        <swimmingGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergSeal/Swimming_NordbergSealPup</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.35</drawSize>
+        </swimmingGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Walrus/Dessicated_Walrus</texPath>
+          <drawSize>0.85</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergSeal/NordbergSeal</texPath>
+          <drawSize>1.55</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <swimmingGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergSeal/Swimming_NordbergSeal</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.55</drawSize>
+        </swimmingGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Walrus/Dessicated_Walrus</texPath>
+          <drawSize>1.55</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergSeal/NordbergSeal</texPath>
+          <drawSize>1.9</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <swimmingGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergSeal/Swimming_NordbergSeal</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.9</drawSize>
+        </swimmingGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Walrus/Dessicated_Walrus</texPath>
+          <drawSize>1.9</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="BaseHareNordberg">
+    <devNote>rabbit-1</devNote>
+    <statBases>
+      <MoveSpeed>6.0</MoveSpeed>
+      <MarketValue>50</MarketValue>
+      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+      <Wildness>0.75</Wildness>
+    </statBases>
+    <tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>3.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1.3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <baseBodySize>0.15</baseBodySize>
+      <baseHungerRate>0.135</baseHungerRate>
+      <baseHealthScale>0.35</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Heavy</leatherDef>
+      <trainability>None</trainability>
+      <petness>0.15</petness>
+      <mateMtbHours>8</mateMtbHours>
+      <gestationPeriodDays>5.661</gestationPeriodDays>
+      <soundEating>Rodent_Eat</soundEating>
+      <litterSizeCurve>
+        <points>
+          <li>(1.0, 0)</li>
+          <li>(1.5, 1)</li>
+          <li>(2.0, 1)</li>
+          <li>(2.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>7</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.15</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2222</minAge>
+          <soundWounded>Pawn_Hare_Wounded</soundWounded>
+          <soundDeath>Pawn_Hare_Death</soundDeath>
+          <soundCall>Pawn_Hare_Call</soundCall>
+          <soundAngry>Pawn_Hare_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef Abstract="True" ParentName="AnimalKindBase" Name="HareBase">
+    <combatPower>33</combatPower>
+	<wildGroupSize>2~3</wildGroupSize>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
+  </PawnKindDef>
+
+  <ThingDef ParentName="BaseHareNordberg">
+    <defName>Nordberg_ROE_Snowhare</defName>
+    <label>Nordbergian Rabbit</label>
+    <description>A common sight in northern climates, these bipedal rabbits have adapted survive in harsh winter enviroments. Despite possessing little meat, this does not stop them from being hunted for their thick fur by local tribes.</description>
+    <uiIconScale>1.5</uiIconScale>
+    <statBases>
+      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+    </statBases>
+    <race>
+      <useMeatFrom>Hare</useMeatFrom>
+	  	<wildBiomes>
+				<BorealForest>0.24</BorealForest>
+				<Tundra>0.23</Tundra>
+				<IceSheet>0.16</IceSheet>
+				<SeaIce>0.16</SeaIce>
+				<GlacialPlain MayRequire="Ludeon.RimWorld.Odyssey">0.18</GlacialPlain>
+		</wildBiomes>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HareBase">
+    <defName>Nordberg_ROE_Snowhare</defName>
+    <label>Nordbergian Rabbit</label>
+    <race>Nordberg_ROE_Snowhare</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergRabbit/NordbergRabbit</texPath>
+          <drawSize>0.85</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergRabbit/NordbergRabbit</texPath>
+          <drawSize>0.95</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/NordbergRabbit/NordbergRabbit</texPath>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

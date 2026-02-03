@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <SoundDef>
+    <defName>Pawn_ROE_Yeti_Call</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/Animal/ROE_Yeti/YetiCall</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>45~50</volumeRange>
+        <pitchRange>0.8~1.2</pitchRange>
+        <distRange>0~30</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Pawn_ROE_Yeti_Angry</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/Animal/ROE_Yeti/YetiAngry</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>45~50</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <distRange>0~30</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Pawn_ROE_Yeti_Death</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/Animal/ROE_Yeti/YetiDeath</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>55~58</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <distRange>0~30</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Pawn_ROE_Yeti_Wounded</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/Animal/ROE_Yeti/YetiWounded</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>45~50</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <distRange>0~30</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Pawn_ROE_Seal_Call</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/Animal/ROE_Seal/SealCall</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>35~38</volumeRange>
+        <pitchRange>0.95~1.15</pitchRange>
+        <distRange>0~30</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Pawn_ROE_Seal_Death</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/Animal/ROE_Seal/SealDeath</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>30~35</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <distRange>0~30</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Pawn_ROE_Seal_Wounded</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/Animal/ROE_Seal/SealWounded</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>30~35</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <distRange>0~30</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Pawn_ROE_SealBaby_Death</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/Animal/ROE_Seal/BabySealDead</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>39~43</volumeRange>
+        <pitchRange>0.95~1.15</pitchRange>
+        <distRange>0~30</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</Defs>
