@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+	<!-- EN: Nordbergian Boys Parka -->
+	<Apparel_ROE_NordbergBoy.label>Нордбергская шуба для мальчиков</Apparel_ROE_NordbergBoy.label>
+	<!-- EN: A traditional parka worn by young boys in Nordberg, worn tight to allow them to run wild and play in the snow. -->
+	<Apparel_ROE_NordbergBoy.description>Традиционная шуба для мальчиков Нордберга. Самое то, чтобы играть в снегу и беситься.</Apparel_ROE_NordbergBoy.description>
+	<!-- EN: Nordbergian Girls Parka -->
+	<Apparel_ROE_NordbergGirl.label>Нордбергская шуба для девочек</Apparel_ROE_NordbergGirl.label>
+	<!-- EN: A traditional parka worn by young girls in Nordberg, worn tight to allow them to run wild and play in the snow. -->
+	<Apparel_ROE_NordbergGirl.description>Традиционная шуба для девочек Нордберга. Самое то, чтобы играть в снегу и беситься.</Apparel_ROE_NordbergGirl.description>
+	<!-- EN: Outcasts Parka -->
+	<Apparel_ROE_NordbergWitchBoy.label>Шуба Изгоя</Apparel_ROE_NordbergWitchBoy.label>
+	<!-- EN: A custom parka designed after an infamous orphan from nordberg, known as the Witchboy. Its rugged nature allows even a child to access the natural magic around them. -->
+	<Apparel_ROE_NordbergWitchBoy.description>Нестандартная шуба, носимая Ведьмачком. Позволяет даже ребенку прикоснуться к природной магии вокруг.</Apparel_ROE_NordbergWitchBoy.description>
+	<!-- EN: Fancy Nordbergian Girls Parka -->
+	<Apparel_ROE_NordbergWitchGirl.label>Украшенная нордбергская шуба для девочек</Apparel_ROE_NordbergWitchGirl.label>
+	<!-- EN: A girls fur parka with custom alterations. -->
+	<Apparel_ROE_NordbergWitchGirl.description>Девчачья шуба с измененным внешним видом.</Apparel_ROE_NordbergWitchGirl.description>
+</LanguageData>

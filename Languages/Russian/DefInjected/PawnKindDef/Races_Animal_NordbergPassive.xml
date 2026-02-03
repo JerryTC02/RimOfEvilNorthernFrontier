@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+	<!-- EN: Nordbergian Seal-->
+	<Nordberg_ROE_Seal.label>Нордбергский тюлень</Nordberg_ROE_Seal.label>
+	<!-- EN: An unusual species of seal that possesses tusks and an aggressive nature. Young individuals barely resemble their parents, possessing a pure white fur coat and large eyes that many find adorable, and others find extremely unnerving.-->
+	<Nordberg_ROE_Seal.description>Необычный подвид тюленя с бивнями и дурным характером. Юные особи почти не похожи на родителей, обладая чистым белым мехом и огромными глазами, которые умиляют или вызывают дрожь.</Nordberg_ROE_Seal.description>
+	<!-- EN: tusk-->
+	<Nordberg_ROE_Seal.tools.0.label>бивень</Nordberg_ROE_Seal.tools.0.label>
+	<!-- EN: head-->
+	<Nordberg_ROE_Seal.tools.2.label>голова</Nordberg_ROE_Seal.tools.2.label>
+	<!-- EN: Nordbergian Seal-->
+	<Nordberg_ROE_SealPup.label>Нордбергский тюлень</Nordberg_ROE_SealPup.label>
+	<!-- EN: nordbergian seal pup-->
+	<Nordberg_ROE_SealPup.lifestages.0.label>Нордбергский тюленёнок</Nordberg_ROE_SealPup.lifestages.0.label>
+	<!-- EN: nordbergian seal pups-->
+	<Nordberg_ROE_SealPup.lifestages.0.labelPlural>Нордбергские тюленята</Nordberg_ROE_SealPup.lifestages.0.labelPlural>
+	<!-- EN: nordbergian seal pup-->
+	<Nordberg_ROE_Seal.lifestages.0.label>Нордбергский тюленёнок</Nordberg_ROE_Seal.lifestages.0.label>
+	<!-- EN: nordbergian seal pups-->
+	<Nordberg_ROE_Seal.lifestages.0.labelPlural>Нордбергские тюленята</Nordberg_ROE_Seal.lifestages.0.labelPlural>
+	<!-- EN: Nordbergian Rabbit-->
+	<Nordberg_ROE_Snowhare.label>Нордбергский кролик</Nordberg_ROE_Snowhare.label>
+	<!-- EN: A common sight in northern climates, these bipedal rabbits have adapted survive in harsh winter enviroments. Despite possessing little meat, this does not stop them from being hunted for their thick fur by local tribes.-->
+	<Nordberg_ROE_Snowhare.description>Частый гость в северных краях, нордбергский кролик приспособился к суровым зимам. На них охотятся местные племена не ради скудного мяса, а ради плотного меха.</Nordberg_ROE_Snowhare.description>
+</LanguageData>

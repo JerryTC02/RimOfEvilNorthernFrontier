@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+	<!-- EN: Nordbergian Beanie-->
+	<Apparel_ROE_NordbergBeanieA.label>Нордбергская шапка</Apparel_ROE_NordbergBeanieA.label>
+	<!-- EN: A thick furlined cap, very warm and fashionable.-->
+	<Apparel_ROE_NordbergBeanieA.description>Толстая меховая шапка. Очень теплая и стильная.</Apparel_ROE_NordbergBeanieA.description>
+	<!-- EN: Nordbergian Beanie (Alt)-->
+	<Apparel_ROE_NordbergBeanieB.label>Нордбергская шапка (изм.)</Apparel_ROE_NordbergBeanieB.label>
+	<!-- EN: A thick furlined cap, very warm and fashionable.-->
+	<Apparel_ROE_NordbergBeanieB.description>Толстая меховая шапка. Очень теплая и стильная.</Apparel_ROE_NordbergBeanieB.description>
+	<!-- EN: Nordbergian Fur Hat-->
+	<Apparel_ROE_NordbergFurHat.label>Нордбергская меховая шапка</Apparel_ROE_NordbergFurHat.label>
+	<!-- EN: A thick and sturdy furlined hat, very warm and fashionable.-->
+	<Apparel_ROE_NordbergFurHat.description>Толстая меховая шапка. Очень теплая и стильная.</Apparel_ROE_NordbergFurHat.description>
+	<!-- EN: Nordbergian Earmuffs-->
+	<Apparel_ROE_NordbergAdultEarmuffs.label>Нордбергские наушники</Apparel_ROE_NordbergAdultEarmuffs.label>
+	<!-- EN: A set of earmuffs crafted in nordbergian style, they are warmer then they look.-->
+	<Apparel_ROE_NordbergAdultEarmuffs.description>Наушники в нордбергском стиле. Теплее, чем кажутся.</Apparel_ROE_NordbergAdultEarmuffs.description>
+	<!-- EN: Nordbergian Shawl-->
+	<Apparel_ROE_NordbergShawl.label>Нордбергская шаль</Apparel_ROE_NordbergShawl.label>
+	<!-- EN: A fancy shawl sewn with northern designs, meant for the housewife who doesnt intend to go outside often.-->
+	<Apparel_ROE_NordbergShawl.description>Украшенная северными узорами шаль. Идеальна для домохозяек.</Apparel_ROE_NordbergShawl.description>
+	<!-- EN: Hunters Hood-->
+	<Apparel_ROE_NordbergHunterHood.label>Капюшон охотника</Apparel_ROE_NordbergHunterHood.label>
+	<!-- EN: A sturdy mask and hood designed for long distance travel and hunting.-->
+	<Apparel_ROE_NordbergHunterHood.description>Прочный капюшон с маской для дальних путешествий и охоты.</Apparel_ROE_NordbergHunterHood.description>
+	<!-- EN: Harpoon Bundle-->
+	<Apparel_ROE_HarpoonBag.label>Связка гарпунов</Apparel_ROE_HarpoonBag.label>
+	<!-- EN: A leather wrapped bundle of harpoons.-->
+	<Apparel_ROE_HarpoonBag.description>Связка гарпунов, стянутая кожей.</Apparel_ROE_HarpoonBag.description>
+</LanguageData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+	<!-- Midwinter Festival Lantern -->
+	<Apparel_ROE_LanternA.label>Фонарь Средизимья</Apparel_ROE_LanternA.label>
+	<!-- EN: a small paper lantern crafted for the Midwinters Eve festival, typically carried by children to keep warm and help explore the towns edges whilst their parents are busy drinking.\n\nWeapons above 3 mass will be forcibly dropped if equipped. -->
+	<Apparel_ROE_LanternA.description>Маленький бумажный фонарь, сделанный для фестиваля Средизимья. Обычно его носят дети, чтобы греться и играть в ночи, пока их родители напиваются.\n\nОружие с весом более 3 будет брошено на землю при экипировке.</Apparel_ROE_LanternA.description>
+	<!-- EN: Midwinter Festival Lantern (Alt) -->
+	<Apparel_ROE_LanternB.label>Фонарь Средизимья (изм.)</Apparel_ROE_LanternB.label>
+	<!-- EN: a small paper lantern crafted for the Midwinters Eve festival, typically carried by children to keep warm and help explore the towns edges whilst their parents are busy drinking.\n\nWeapons above 3 mass will be forcibly dropped if equipped. -->
+	<Apparel_ROE_LanternB.description>Маленький бумажный фонарь, сделанный для фестиваля Средизимья. Обычно его носят дети, чтобы греться и играть в ночи, пока их родители напиваются.\n\nОружие с весом более 3 будет брошено на землю при экипировке.</Apparel_ROE_LanternB.description>
+</LanguageData>

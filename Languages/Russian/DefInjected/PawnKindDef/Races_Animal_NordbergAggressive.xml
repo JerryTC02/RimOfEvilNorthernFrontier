@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+	<!-- EN: left claw-->
+	<ThingBaseWolfNordberg.tools.0.label>левый коготь</ThingBaseWolfNordberg.tools.0.label>
+	<!-- EN: claw-->
+	<ThingBaseWolfNordberg.tools.0.labelNoLocation>коготь</ThingBaseWolfNordberg.tools.0.labelNoLocation>
+	<!-- EN: right claw-->
+	<ThingBaseWolfNordberg.tools.1.label>правый коготь</ThingBaseWolfNordberg.tools.1.label>
+	<!-- EN: claw-->
+	<ThingBaseWolfNordberg.tools.1.labelNoLocation>коготь</ThingBaseWolfNordberg.tools.1.labelNoLocation>
+	<!-- EN: head -->
+	<ThingBaseWolfNordberg.tools.3.label>голова</ThingBaseWolfNordberg.tools.3.label>
+	<!-- EN: Nordbergian Wolf-->
+	<Wolf_ROE_Nordberg.label>Нордбергский Волк</Wolf_ROE_Nordberg.label>
+	<!-- EN: Large wolves that plague the northern regions, highly aggressive due to years of overhunting by human tribes. If one can tame these wolves, they are known to be quite playful and will defend their owner till death.-->
+	<Wolf_ROE_Nordberg.description>Крупные волки, наводящие страх на северные регионы. Из-за охотничьего интереса крайне агрессивны. Приручите такого волка - и получите верного и игривого компаньона.</Wolf_ROE_Nordberg.description>
+	<!-- EN: Nordbergian Wolves-->
+	<Wolf_ROE_Nordberg.labelPlural>Нордбергские волки</Wolf_ROE_Nordberg.labelPlural>
+	<!-- EN: nordbergian wolf puppy-->
+	<Wolf_ROE_Nordberg.lifestages.0.label>Нордбергский волчонок</Wolf_ROE_Nordberg.lifestages.0.label>
+	<!-- EN: nordbergian wolf puppies-->
+	<Wolf_ROE_Nordberg.lifestages.0.labelPlural>Нордбергские волчата</Wolf_ROE_Nordberg.lifestages.0.labelPlural>
+	<!-- EN: left claw-->
+	<ThingBaseWolfNordbergAlpha.tools.0.label>левый коготь</ThingBaseWolfNordbergAlpha.tools.0.label>
+	<!-- EN: claw-->
+	<ThingBaseWolfNordbergAlpha.tools.0.labelNoLocation>коготь</ThingBaseWolfNordbergAlpha.tools.0.labelNoLocation>
+	<!-- EN: right claw-->
+	<ThingBaseWolfNordbergAlpha.tools.1.label>правый коготь</ThingBaseWolfNordbergAlpha.tools.1.label>
+	<!-- EN: claw-->
+	<ThingBaseWolfNordbergAlpha.tools.1.labelNoLocation>коготь</ThingBaseWolfNordbergAlpha.tools.1.labelNoLocation>
+	<!-- EN: Scratch-->
+	<ThingBaseWolfNordbergAlpha.tools.1.capacities.0>Царапина</ThingBaseWolfNordbergAlpha.tools.1.capacities.0>
+	<!-- EN: head -->
+	<ThingBaseWolfNordbergAlpha.tools.3.label>голова</ThingBaseWolfNordbergAlpha.tools.3.label>
+	<!-- EN: Nordbergian Alpha Wolf-->
+	<Wolf_ROE_NordbergAlpha.label>Нордбергский Альфа-Волк</Wolf_ROE_NordbergAlpha.label>
+	<!-- EN: An ancient nordbergian wolf who has grown far larger then others of its kind, highly experienced and scarred by the ravages of time.-->
+	<Wolf_ROE_NordbergAlpha.description>Матёрый нордбергский волк, больше и умнее своих сородичей.</Wolf_ROE_NordbergAlpha.description>
+	<!-- EN: Nordbergian Alpha Wolves-->
+	<Wolf_ROE_NordbergAlpha.labelPlural>Нордбергские альфа-волки</Wolf_ROE_NordbergAlpha.labelPlural>
+	<!-- EN: nordbergian wolf puppy-->
+	<Wolf_ROE_NordbergAlpha.lifestages.0.label>Нордбергский волчонок</Wolf_ROE_NordbergAlpha.lifestages.0.label>
+	<!-- EN: nordbergian wolf puppies-->
+	<Wolf_ROE_NordbergAlpha.lifestages.0.labelPlural>Нордбергские волчата</Wolf_ROE_NordbergAlpha.lifestages.0.labelPlural>
+	<!-- EN: Yeti-->
+	<Nordberg_ROE_Yeti.label>Йети</Nordberg_ROE_Yeti.label>
+	<!-- EN: Rare beasts found in the far reachs of the north, Yetis are incredibly dangerous creatures which can decimate entire colonies with ease. Despite their massive bulk, they are not actively aggressive and will often coexist with animals they find cute, such as baby seals.-->
+	<Nordberg_ROE_Yeti.description>Редкие звери с дальнего севера. Йети крайне опасны и могут расправиться с колонией в одиночку. Несмотря на их размеры, они не очень агрессивны и могут сосуществовать с животными, которых считают милыми - например, с детенышами тюленей.</Nordberg_ROE_Yeti.description>
+	<!-- EN: left fist-->
+	<Nordberg_ROE_Yeti.tools.0.label>левый кулак</Nordberg_ROE_Yeti.tools.0.label>
+	<!-- EN: fist-->
+	<Nordberg_ROE_Yeti.tools.0.labelNoLocation>кулак</Nordberg_ROE_Yeti.tools.0.labelNoLocation>
+	<!-- EN: right fist-->
+	<Nordberg_ROE_Yeti.tools.1.label>правый кулак</Nordberg_ROE_Yeti.tools.1.label>
+	<!-- EN: fist-->
+	<Nordberg_ROE_Yeti.tools.1.labelNoLocation>кулак</Nordberg_ROE_Yeti.tools.1.labelNoLocation>
+	<!-- EN: throw rock-->
+	<Nordberg_ROE_Rock.label>метнуть камень</Nordberg_ROE_Rock.label>
+	<!-- EN: Command the yeti to throw a chunk of solid ice or stone at a nearby location.-->
+	<Nordberg_ROE_Rock.description>Приказать йети метнуть кусок льда или камня в указанную точку.</Nordberg_ROE_Rock.description>
+	<!-- EN: boulder-->
+	<Bullet_ROE_Nordberg_Rock.label>булыжник</Bullet_ROE_Nordberg_Rock.label>
+	<!-- EN: crush-->
+	<Rock_Yeti_Crush.label>Ушиб</Rock_Yeti_Crush.label>
+	<!-- EN: {0} has been crushed to death.-->
+	<Rock_Yeti_Crush.deathMessage>{0} был(а) раздавлен(а) насмерть.</Rock_Yeti_Crush.deathMessage>
+</LanguageData>

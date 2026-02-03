@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+	<!-- EN: Nordbergian Boys Hood-->
+	<Apparel_ROE_NordbergBoyHood.label>Нордбергский капюшон мальчика</Apparel_ROE_NordbergBoyHood.label>
+	<!-- EN: A small furlined hood for young nordbergian boys to keep them warm in the harsh winter winds.-->
+	<Apparel_ROE_NordbergBoyHood.description>Небольшой обитый мехом капюшон хранит нордбергских мальчиков от суровых зимних ветров.</Apparel_ROE_NordbergBoyHood.description>
+	<!-- EN: Nordbergian Girls Hood-->
+	<Apparel_ROE_NordbergGirlHood.label>Нордбергский капюшон девочки</Apparel_ROE_NordbergGirlHood.label>
+	<!-- EN: A small furlined hood for young nordbergian girls to keep them warm in the harsh winter winds.-->
+	<Apparel_ROE_NordbergGirlHood.description>Небольшой обитый мехом капюшон хранит нордбергских девочек от суровых зимних ветров</Apparel_ROE_NordbergGirlHood.description>
+	<!-- EN: Outcasts Hood-->
+	<Apparel_ROE_NordbergWitchBoyHood.label>Капюшон Изгоя</Apparel_ROE_NordbergWitchBoyHood.label>
+	<!-- EN: A sturdy frostcovered hood and mask worn by the Orphan known as "The Witchboy", its visage is known to inspire unease in those who gaze on it.-->
+	<Apparel_ROE_NordbergWitchBoyHood.description>Прочный мерзлый капюшон с маской, носимый Ведьмачком. Его внешний вид внушает смутное беспокойство.</Apparel_ROE_NordbergWitchBoyHood.description>
+	<!-- EN: Nordbergian Childrens Earmuffs-->
+	<Apparel_ROE_NordbergEarmuffs.label>Нордбергские детские наушники</Apparel_ROE_NordbergEarmuffs.label>
+	<!-- EN: An adorable set of earmuffs designed for young children, they are warmer then they look.-->
+	<Apparel_ROE_NordbergEarmuffs.description>Милые наушники для детей. Теплее, чем кажутся.</Apparel_ROE_NordbergEarmuffs.description>
+</LanguageData>

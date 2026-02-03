@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+	<!-- EN: Nordbergian Fur Parka -->
+	<Apparel_ROE_NordbergA.label>Нордбергская шуба</Apparel_ROE_NordbergA.label>
+	<!-- EN: A large fur parka worn by the people of Nordberg, incredibly warm and durable. -->
+	<Apparel_ROE_NordbergA.description>Толстая меховая шуба жителей Нордберга. Очень теплая и прочная.</Apparel_ROE_NordbergA.description>
+	<!-- EN: Nordbergian Fur Parka (Alt) -->
+	<Apparel_ROE_NordbergB.label>Нордбергская шуба (изм.)</Apparel_ROE_NordbergB.label>
+	<!-- EN: A large fur parka worn by the people of Nordberg, incredibly warm and durable. -->
+	<Apparel_ROE_NordbergB.description>Толстая меховая шуба жителей Нордберга. Очень теплая и прочная.</Apparel_ROE_NordbergB.description>
+	<!-- EN: Hunters Parka -->
+	<Apparel_ROE_NordbergHunter.label>Охотничья шуба</Apparel_ROE_NordbergHunter.label>
+	<!-- EN: A large and bulky parka designed for long distance travel and hunting, much thicker then the standard parka and reinforced with a wolfs hide for extra protection. -->
+	<Apparel_ROE_NordbergHunter.description>Крупная и плотная шуба, сшитая для дальних путешествий и охоты. Куда толще обычной шубы и укреплена волчьей шкурой для дополнительной защиты.</Apparel_ROE_NordbergHunter.description>
+	<!-- EN: Northern Mistress Dress -->
+	<Apparel_ROE_NordbergMistress.label>Платье Северной Мадам</Apparel_ROE_NordbergMistress.label>
+	<!-- EN: An ornate and expensive (for a Nordbergian design) dress that helps accentuate curves in the right places, despite its look its fairly durable and meant for the mistress with abit of a violent streak in her personality. -->
+	<Apparel_ROE_NordbergMistress.description>Вычурное и дорогое (по меркам Нордберга) платье, подчеркивающее фигуру в нужных местах. Несмотря на внешний вид, весьма прочное; подходит для дам с ноткой жестокости в характере.</Apparel_ROE_NordbergMistress.description>
+</LanguageData>
