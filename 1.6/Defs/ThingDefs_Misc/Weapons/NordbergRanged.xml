@@ -28,6 +28,7 @@
 	<equippedAngleOffset>45</equippedAngleOffset>
 	<equippedStatOffsets>
 	 <HuntingStealth>0.05</HuntingStealth>
+	 <FishingSpeed MayRequire="Ludeon.RimWorld.Odyssey">0.1</FishingSpeed>
     </equippedStatOffsets>
     <weaponTags>
       <li>NeolithicRangedHeavy</li>

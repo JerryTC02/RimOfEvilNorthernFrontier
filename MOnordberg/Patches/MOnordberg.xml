@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class = "PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "MeleeWeapon_ROE_HuntersClub"]/costList</xpath>
+		<value>
+	     <costList>
+          <DankPyon_IronIngot>5</DankPyon_IronIngot>
+		  <WoodLog>45</WoodLog>
+         </costList>
+		</value>
+	</Operation>
+	
+</Patch>

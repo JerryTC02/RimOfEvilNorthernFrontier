@@ -37,6 +37,7 @@
       <recipeUsers Inherit="False">
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
+		<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Workbench</li>
       </recipeUsers>
       <useIngredientsForColor>false</useIngredientsForColor>
       <skillRequirements>

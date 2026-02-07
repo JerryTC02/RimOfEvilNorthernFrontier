@@ -28,6 +28,7 @@
       <recipeUsers>
         <li>ElectricSmithy</li>
         <li>FueledSmithy</li>
+		<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Anvil</li>
       </recipeUsers>
       <effectWorking>Smelt</effectWorking>
       <soundWorking>Recipe_MakeBow</soundWorking>
